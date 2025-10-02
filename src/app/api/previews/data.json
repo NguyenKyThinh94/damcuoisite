@@ -1,0 +1,67 @@
+{
+  "brideName": "THÚY LINH",
+  "groomName": "MINH ĐỨC",
+  "weddingDate": "13 THÁNG 7, 2024",
+  "location": "Hà Nội, Việt Nam",
+  "hashtag": "#ThuyLinhMinhDuc",
+  "heroImage": "https://images.zola.com/07660b47-0cdb-4c0a-9425-ebcc5525de00?w=1000",
+  "howWeMet": {
+    "date": "23.04.2019",
+    "story": "Chúng tôi gặp nhau tại một bữa tiệc của bạn học và ban đầu không nghĩ gì nhiều. Sau đó cả nhóm đi hát karaoke sau một ngày học tập căng thẳng và cả hai đều chọn bài \"Người Yêu Cũ\". Và mọi thứ như được sắp đặt. Anh hát cao, em hát thấp. Có những cú đấm tay. Chúng tôi hòa âm một cách tình cờ. Đó chính là lúc chúng tôi nghĩ, \"Được rồi. Đây có thể là điều gì đó đặc biệt.\""
+  },
+  "proposal": {
+    "date": "23.04.2022",
+    "story": "Vào ngày kỷ niệm lần đầu gặp nhau, chúng tôi quay lại nơi quen thuộc để hát karaoke cùng bạn bè. Khi bài \"Người Yêu Cũ\" vang lên, chúng tôi chạy lên phía trước. Khi âm nhạc đột nhiên nhỏ dần, em nhìn sang thì thấy anh đang quỳ xuống một chân. Em hét lên, la to \"ĐỒNG Ý\" và chúng tôi đã đính hôn."
+  },
+  "aboutBride": {
+    "name": "NGUYỄN THÚY LINH",
+    "image": "https://images.zola.com/ab57f490-5561-4f8b-8fbb-9beb39cadb46?w=500",
+    "description": "Thúy Linh là một nhà thiết kế và nghệ sĩ đầy đam mê, yêu thích tạo ra những điều đẹp đẽ. Cô có một trái tim ấm áp và nụ cười truyền nhiễm sáng bừng mọi không gian. Khi không làm việc với dự án sáng tạo mới nhất, bạn có thể tìm thấy cô ấy khám phá những quán cà phê mới hoặc lên kế hoạch cho cuộc phiêu lưu tiếp theo.",
+    "hobbies": ["Chụp ảnh", "Vẽ tranh", "Nấu ăn", "Đi bộ đường dài", "Đọc sách"],
+    "favoriteThings": ["Cà phê", "Hoàng hôn", "Sách cũ", "Hoa tươi", "Khiêu vũ"]
+  },
+  "aboutGroom": {
+    "name": "TRẦN MINH ĐỨC",
+    "image": "https://images.zola.com/1787293e-0f3e-469c-be55-c52dd13b5ed4?w=500",
+    "description": "Minh Đức là một kỹ sư phần mềm với tình yêu dành cho âm nhạc và công nghệ. Anh được biết đến với trí thông minh nhanh nhạy, tinh thần hào phóng và khả năng làm cho bất kỳ ai cũng cảm thấy như ở nhà. Dù đang code ứng dụng tiếp theo hay gảy đàn guitar, anh đều tiếp cận mọi thứ với đam mê và sự tận tâm.",
+    "hobbies": ["Chơi guitar", "Lập trình", "Leo núi", "Chơi game", "Du lịch"],
+    "favoriteThings": ["Nhạc sống", "Rượu vang ngon", "Thể thao mạo hiểm", "Thiết bị công nghệ", "Karaoke"]
+  },
+  "galleryImages": [
+    "https://images.zola.com/0f14b8a8-ea17-40a6-a0cd-5dde20921062?w=500",
+    "https://images.zola.com/ab57f490-5561-4f8b-8fbb-9beb39cadb46?w=500",
+    "https://images.zola.com/1787293e-0f3e-469c-be55-c52dd13b5ed4?w=500",
+    "https://images.zola.com/c9745809-0c7d-4143-a064-a3a9610a74d9?w=500",
+    "https://images.zola.com/e8e663f9-e94b-4cf7-8432-b23cb5d124a4?w=500",
+    "https://images.zola.com/4d47a172-8f95-46ce-addb-16b448c8cca6?w=500",
+    "https://images.zola.com/d17b5d05-ddff-4afc-aa6f-e7f5bedad42e?w=500",
+    "https://images.zola.com/6f582e02-937a-4dee-a140-ed65af0d9c53?w=500",
+    "https://images.zola.com/caa69165-a090-4299-816e-e7fdc7722b71?w=500"
+  ],
+  "event": {
+    "title": "LỄ CƯỚI & TIỆC CƯỚI",
+    "date": "THỨ BẢY, 13 THÁNG 7, 2024",
+    "time": "17:30 - 23:00",
+    "venue": "Nhà hàng tiệc cưới Golden Palace",
+    "address": "123 Đường Láng, Đống Đa, Hà Nội",
+    "description": "Hãy tham gia cùng chúng tôi trong lễ cưới của chúng tôi, tiếp theo là bữa tối, đồ uống và khiêu vũ! Sàn có thể hơi mềm một chút, vì vậy bạn có thể muốn cân nhắc lại việc đi giày cao gót. Có không gian ngoài trời có thể hơi lạnh vào ban đêm—chúng tôi khuyên bạn nên mang theo khăn choàng hoặc áo khoác nhẹ.",
+    "mapUrl": "https://www.google.com/maps/place/123+Đường+Láng,+Đống+Đa,+Hà+Nội",
+    "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Thúy%20Linh%20%26%20Minh%20Đức%20Wedding&dates=20240713T103000/20240713T160000&details=Tham%20gia%20lễ%20cưới%20và%20tiệc%20cưới%20của%20chúng%20tôi%20tại%20Golden%20Palace&location=123%20Đường%20Láng%2C%20Đống%20Đa%2C%20Hà%20Nội"
+  },
+  "giftRegistry": {
+    "bride": {
+      "name": "NGUYỄN THÚY LINH",
+      "bankName": "ACB Bank",
+      "accountNumber": "20844897",
+      "accountName": "NGUYEN THUY LINH",
+      "qrCode": "https://img.vietqr.io/image/970416-20844897-compact2.png?amount=0&addInfo=Wedding%20Gift%20for%20Aviva"
+    },
+    "groom": {
+      "name": "TRẦN MINH ĐỨC",
+      "bankName": "ACB Bank",
+      "accountNumber": "20844897",
+      "accountName": "TRAN MINH DUC",
+      "qrCode": "https://img.vietqr.io/image/970416-20844897-compact2.png?amount=0&addInfo=Wedding%20Gift%20for%20Benji"
+    }
+  }
+}
