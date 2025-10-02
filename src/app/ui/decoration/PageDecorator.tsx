@@ -14,24 +14,5 @@ export default function PageDecorator({
   width = 250,
   height = 300
 }: PageDecoratorProps) {
-  switch (type) {
-    case 'type1':
-      return (
-        <DecorationPageType1 
-          className={className}
-          width={width}
-          height={height}
-        />
-      );
-    case 'type2':
-      return (
-        <DecorationPageType2 
-          className={className}
-          width={width}
-          height={height}
-        />
-      );
-    default:
       return null;
-  }
 }
