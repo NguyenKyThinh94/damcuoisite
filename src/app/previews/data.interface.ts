@@ -13,6 +13,15 @@ export interface DataInterface {
     date: string;
     story: string;
   };
+  storyVideo?: {
+    url: string;
+    title: string;
+    description: string;
+  };
+  backgroundMusic?: {
+    url: string;
+    title: string;
+  };
   aboutBride?: {
     name: string;
     image: string;
