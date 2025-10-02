@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 import { BannerProps } from './interface.banner';
-import DecorationTopLLeft from '@/app/ui/decoration/Decoration.page.type1';
-import DecorationBottom from '@/app/ui/decoration/DecorationBottom';
 
 export default function BannerType5({
   brideName,
@@ -41,16 +39,6 @@ export default function BannerType5({
             >
               <div className="min-h-[200vh]">
                 <div className="relative flex flex-col justify-center items-center h-screen">
-                  <DecorationTopLLeft
-                    width={500}
-                    height={700}
-                    className='max-w-1/2'
-                  />
-                  <DecorationBottom
-                    width={500}
-                    height={700}
-                    className='max-w-1/2'
-                  />
                   <div className=" text-[3rem] md:text-[5rem] leading-[1.2em] mb-4 font-bold text-center">
                     <div>
                       {groomName}

@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { BannerProps } from './interface.banner';
-import DecorationTopLLeft from '@/app/ui/decoration/Decoration.page.type1';
 
 export default function BannerType4({
   brideName,
@@ -36,11 +35,6 @@ export default function BannerType4({
       </div>
       <div id="banner-text" className="relative h-screen flex items-center justify-center bg-red-100 text-[#4a4a4a]">
         <div className="z-10 text-center items-center  w-full max-w-[1200px] mx-auto">
-          <DecorationTopLLeft
-            width={500}
-            height={700}
-            className='max-w-1/3 md:max-w-1/4'
-           />
           <div className="text-[4rem] leading-[1.4em] mb-4 hidden md:block font-bold text-center">
             <div>{groomName}</div>
             <div>&</div>

@@ -7,10 +7,10 @@ import PageDecorator from '@/app/ui/decoration/PageDecorator';
 
 interface Type3ClientProps {
   data: DataInterface;
-  decoratorType?: 'type1' | 'type2' | 'type3';
+  decoratorType?: 'type1' | 'type2';
 }
 
-export default function Type3({ data, decoratorType = "type3" }: Type3ClientProps) {
+export default function Type3({ data, decoratorType = "type2" }: Type3ClientProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   // Destructure data with fallbacks
