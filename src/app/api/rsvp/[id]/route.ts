@@ -1,7 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface RSVPData {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  attendance: string;
+  guestCount: number;
+  message: string;
+  dietaryRestrictions: string;
+  createdAt: string;
+}
+
 // Mock RSVP data - should match the data in main route
-const rsvpData = [
+const rsvpData: RSVPData[] = [
   {
     id: 1,
     name: "Nguyễn Văn A",
@@ -39,11 +51,18 @@ const rsvpData = [
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+  { params }: { params: Promise<{ id: string }> }
+): Promise<NextResponse> {
   try {
-    const { id } = params;
+    const { id } = await params;
     const rsvpId = parseInt(id);
+    
+    if (isNaN(rsvpId)) {
+      return NextResponse.json(
+        { success: false, error: 'Invalid RSVP ID' },
+        { status: 400 }
+      );
+    }
     
     const rsvp = rsvpData.find(item => item.id === rsvpId);
     
@@ -59,6 +78,7 @@ export async function GET(
       data: rsvp
     });
   } catch (error) {
+    console.error('Error fetching RSVP:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to fetch RSVP' },
       { status: 500 }

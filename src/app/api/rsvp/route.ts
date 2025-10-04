@@ -1,7 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface RSVPData {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  attendance: string;
+  guestCount: number;
+  message: string;
+  dietaryRestrictions: string;
+  createdAt: string;
+}
+
 // Mock RSVP data - in real app this would be from database
-let rsvpData: any[] = [
+let rsvpData: RSVPData[] = [
   {
     id: 1,
     name: "Nguyễn Văn A",
@@ -37,7 +49,7 @@ let rsvpData: any[] = [
   }
 ];
 
-export async function GET() {
+export async function GET(): Promise<NextResponse> {
   try {
     return NextResponse.json({
       success: true,
@@ -45,6 +57,7 @@ export async function GET() {
       total: rsvpData.length
     });
   } catch (error) {
+    console.error('Error fetching RSVP data:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to fetch RSVP data' },
       { status: 500 }
@@ -52,7 +65,7 @@ export async function GET() {
   }
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
     const body = await request.json();
     
@@ -67,7 +80,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create new RSVP entry
-    const newRsvp = {
+    const newRsvp: RSVPData = {
       id: rsvpData.length + 1,
       name,
       email,
@@ -87,6 +100,7 @@ export async function POST(request: NextRequest) {
       data: newRsvp
     });
   } catch (error) {
+    console.error('Error submitting RSVP:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to submit RSVP' },
       { status: 500 }
