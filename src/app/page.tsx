@@ -87,7 +87,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              4 Template Tuyệt Đẹp
+              8+ Template Tuyệt Đẹp
             </h3>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -170,6 +170,22 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+
+          {/* View All Templates Button */}
+          <div className="text-center mt-12">
+            <Link
+              href="/previews/type5"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-pink-500 hover:to-purple-600 text-gray-800 hover:text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              <span>Xem Thêm Templates</span>
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <p className="text-sm text-gray-500 mt-3">
+              Type5, Type6, Type7, Type8 và nhiều hơn nữa...
+            </p>
           </div>
         </div>
       </section>
@@ -256,8 +272,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Blog Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Blog & Kinh Nghiệm
+            </h3>
+            <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Khám phá những bài viết hữu ích về xu hướng đám cưới và mẹo thiết kế website
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {/* Blog Post 1 */}
+            <Link href="/blogs/vi-sao-can-website" className="group block">
+              <article className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="aspect-video bg-gradient-to-r from-pink-300 to-purple-400 relative overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Vì sao cần website đám cưới"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Xu hướng
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 group-hover:text-pink-600 transition-colors mb-3">
+                    Vì sao cần website đám cưới?
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Khám phá tầm quan trọng của website đám cưới trong thời đại số và những lợi ích không ngờ...
+                  </p>
+                  <div className="flex items-center justify-between text-xs text-gray-500">
+                    <span>5 phút đọc</span>
+                    <span className="text-pink-600 font-medium">Đọc tiếp →</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
+            {/* Blog Post 2 */}
+            <Link href="/blogs/chon-template-dam-cuoi" className="group block">
+              <article className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="aspect-video bg-gradient-to-r from-blue-300 to-purple-400 relative overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Chọn template đám cưới"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Thiết kế
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors mb-3">
+                    10 mẹo chọn template hoàn hảo
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Hướng dẫn chi tiết cách chọn template phù hợp với phong cách đám cưới của bạn...
+                  </p>
+                  <div className="flex items-center justify-between text-xs text-gray-500">
+                    <span>7 phút đọc</span>
+                    <span className="text-blue-600 font-medium">Đọc tiếp →</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+
+            {/* Blog Post 3 */}
+            <Link href="/blogs/xu-huong-thiet-ke-2024" className="group block">
+              <article className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="aspect-video bg-gradient-to-r from-emerald-300 to-blue-400 relative overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Xu hướng thiết kế 2024"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gradient-to-r from-emerald-500 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Xu hướng
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 group-hover:text-emerald-600 transition-colors mb-3">
+                    Xu hướng thiết kế 2024
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Cập nhật những xu hướng mới nhất trong thiết kế website đám cưới hiện đại...
+                  </p>
+                  <div className="flex items-center justify-between text-xs text-gray-500">
+                    <span>6 phút đọc</span>
+                    <span className="text-emerald-600 font-medium">Đọc tiếp →</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          </div>
+
+          {/* View All Blogs Button */}
+          <div className="text-center">
+            <Link
+              href="/blogs"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              <span>Xem Tất Cả Blog</span>
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Sẵn Sàng Tạo Website Đám Cưới?
