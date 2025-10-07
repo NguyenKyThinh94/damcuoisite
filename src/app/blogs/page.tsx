@@ -107,9 +107,6 @@ const blogPosts = [
 const categories = ["Tất cả", "Xu hướng", "Thiết kế", "Hướng dẫn", "Mẹo hay", "Tính năng"];
 
 export default function BlogsPage() {
-  const featuredPosts = blogPosts.filter(post => post.featured);
-  const regularPosts = blogPosts.filter(post => !post.featured);
-
   return (
     <div className="max-w-none">
       {/* Hero Section */}
@@ -140,54 +137,14 @@ export default function BlogsPage() {
         </div>
       </div>
 
-      {/* Featured Posts */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-          <span className="mr-3">⭐</span>
-          Bài viết nổi bật
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {featuredPosts.map((post) => (
-            <Link key={post.id} href={post.href} className="group block">
-              <article className="bg-white/70 backdrop-blur-sm rounded-2xl border border-pink-200/50 overflow-hidden hover:shadow-lg transition-all">
-                <div className="aspect-video bg-gradient-to-r from-pink-200 to-purple-200 relative overflow-hidden">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                      {post.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-pink-600 transition-colors mb-3 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>{post.date}</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* All Posts */}
+      {/* All Blog Posts */}
       <section>
         <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
           <span className="mr-3">📚</span>
-          Tất cả bài viết
+          Tất cả bài viết ({blogPosts.length})
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {regularPosts.map((post) => (
+          {blogPosts.map((post) => (
             <Link key={post.id} href={post.href} className="group block">
               <article className="bg-white/70 backdrop-blur-sm rounded-2xl border border-pink-200/50 overflow-hidden hover:shadow-lg transition-all h-full">
                 <div className="aspect-video bg-gradient-to-r from-pink-200 to-purple-200 relative overflow-hidden">
@@ -197,8 +154,12 @@ export default function BlogsPage() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-3 left-3">
-                    <span className="bg-white/90 text-pink-700 px-2 py-1 rounded-full text-xs font-medium">
-                      {post.category}
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      post.featured 
+                        ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white'
+                        : 'bg-white/90 text-pink-700'
+                    }`}>
+                      {post.featured ? '⭐ ' + post.category : post.category}
                     </span>
                   </div>
                 </div>
