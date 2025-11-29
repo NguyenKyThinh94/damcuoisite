@@ -76,6 +76,42 @@ export default function PreviewsPage() {
       href: '/previews/type8',
       colors: 'from-slate-600 to-gray-700',
       textColor: 'text-slate-700'
+    },
+    {
+      id: 'type9',
+      name: 'Modern Simple',
+      description: 'Phong cách đơn giản, tối ưu hoàn toàn cho mobile, dễ nhìn, thoải mái',
+      thumbnail: '/images/img9.jpg',
+      href: '/previews/type9',
+      colors: 'from-blue-500 to-cyan-500',
+      textColor: 'text-blue-600'
+    },
+    {
+      id: 'type10',
+      name: 'Minimal Clean',
+      description: 'Thiết kế tối giản, sạch sẽ, mobile-first, nhanh tải, tinh tế',
+      thumbnail: '/images/img10.jpg',
+      href: '/previews/type10',
+      colors: 'from-gray-600 to-gray-700',
+      textColor: 'text-gray-700'
+    },
+    {
+      id: 'type11',
+      name: 'Modern Compact',
+      description: 'Compact layout, nhanh tải, ít khoảng trắng, hoàn hảo cho di động',
+      thumbnail: '/images/img11.jpg',
+      href: '/previews/type11',
+      colors: 'from-teal-500 to-cyan-600',
+      textColor: 'text-teal-600'
+    },
+    {
+      id: 'type12',
+      name: 'Sweet & Simple',
+      description: 'Ngọt ngào, đơn giản, đẹp mắt, phù hợp với cặp đôi yêu thích sự thanh lịch',
+      thumbnail: '/images/img12.jpg',
+      href: '/previews/type12',
+      colors: 'from-pink-500 to-rose-600',
+      textColor: 'text-pink-600'
     }
   ];
 
@@ -96,11 +132,11 @@ export default function PreviewsPage() {
             </Link>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Danh Sách Template
+              12+ Ví Dụ Đám Cưới
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Chọn một template dưới đây để xem bản demo chi tiết. Mỗi template đều có thể tùy chỉnh hoàn toàn theo ý của bạn.
+              Chọn một ví dụ dưới đây để xem bản demo chi tiết. Mỗi ví dụ đều có thể tùy chỉnh hoàn toàn theo ý của bạn.
             </p>
           </div>
         </div>
