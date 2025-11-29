@@ -9,28 +9,28 @@ export default function Home() {
       id: 'type1',
       name: 'Classic Peachy',
       description: 'Thiết kế cổ điển với tone màu cam đào ấm áp, phù hợp với đám cưới truyền thống',
-      image: 'https://images.zola.com/07660b47-0cdb-4c0a-9425-ebcc5525de00?w=500',
+      image: '/images/img13.jpg',
       href: '/previews/type1'
     },
     {
       id: 'type2', 
       name: 'Timeline Blue',
       description: 'Phong cách timeline hiện đại với màu xanh dương và tím, kể câu chuyện tình yêu',
-      image: 'https://images.zola.com/07660b47-0cdb-4c0a-9425-ebcc5525de00?w=500',
+      image: '/images/img14.jpg',
       href: '/previews/type2'
     },
     {
       id: 'type3',
       name: 'Botanical Green', 
       description: 'Thiết kế botanical với tone màu xanh lá cây, tươi mới và tự nhiên',
-      image: 'https://images.zola.com/07660b47-0cdb-4c0a-9425-ebcc5525de00?w=500',
+      image: '/images/img15.jpg',
       href: '/previews/type3'
     },
     {
       id: 'type4',
       name: 'Minimalist Rose',
       description: 'Phong cách tối giản hiện đại với màu hồng rose, thanh lịch và tinh tế',
-      image: 'https://images.zola.com/07660b47-0cdb-4c0a-9425-ebcc5525de00?w=500', 
+      image: '/images/img16.jpg', 
       href: '/previews/type4'
     }
   ];
