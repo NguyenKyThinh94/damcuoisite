@@ -461,7 +461,7 @@ export default function ChonTemplateDamCuoi() {
           </div>
           
           <p className="text-gray-500 text-sm mt-4 text-center">
-            💡 Tạo matrix tương tự để so sánh templates bạn đang cân nhắc
+            💡 Tạo matrix tương tự để so sánh ví dụ bạn đang cân nhắc
           </p>
         </div>
 
@@ -496,17 +496,17 @@ export default function ChonTemplateDamCuoi() {
         {/* CTA */}
         <div className="bg-white rounded-2xl p-8 border border-blue-200 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Sẵn sàng khám phá templates chất lượng?
+            Sẵn sàng khám phá ví dụ chất lượng?
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Xem bộ sưu tập 8+ templates đám cưới đã được optimize theo 10 tiêu chí trên
+            Xem bộ sưu tập 8+ ví dụ đám cưới đã được optimize theo 10 tiêu chí trên
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/previews/type1"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full hover:from-blue-600 hover:to-purple-700 transition-all"
             >
-              Browse Templates
+              Browse Ví Dụ
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

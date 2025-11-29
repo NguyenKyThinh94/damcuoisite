@@ -246,10 +246,10 @@ export default function ViSaoCanWebsitePage() {
               Khám phá hơn 8 template đám cưới tuyệt đẹp, dễ dàng tùy chỉnh và hoàn toàn miễn phí!
             </p>
             <Link 
-              href="/previews/type1"
+              href="/previews"
               className="inline-flex items-center space-x-2 bg-white text-pink-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-50 transition-colors"
             >
-              <span>Xem Templates Ngay</span>
+              <span>Xem Ví Dụ Ngay</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

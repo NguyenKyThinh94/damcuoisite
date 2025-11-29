@@ -78,10 +78,10 @@ export default function BlogLayout({
                 Tất cả bài viết
               </Link>
               <Link 
-                href="/previews/type1" 
+                href="/previews" 
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:from-pink-600 hover:to-purple-700 transition-all"
               >
-                Xem Templates
+                Xem Ví Dụ
               </Link>
             </nav>
 
@@ -129,7 +129,7 @@ export default function BlogLayout({
               href="/previews/type1"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-medium hover:from-pink-600 hover:to-purple-700 transition-all"
             >
-              <span>Khám phá Templates</span>
+              <span>Khám phá Ví Dụ</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -153,7 +153,7 @@ export default function BlogLayout({
                 </span>
               </Link>
               <span className="text-gray-500 text-sm">
-                © 2024 - Template đám cưới miễn phí
+                © 2024 - Website đám cưới
               </span>
             </div>
 
@@ -161,7 +161,9 @@ export default function BlogLayout({
             <div className="flex items-center space-x-6 text-sm">
               {/* Phone */}
               <a 
-                href="tel:0901234567" 
+                href="https://zalo.me/0769779800"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-600 hover:text-pink-600 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -199,8 +201,8 @@ export default function BlogLayout({
               <Link href="/blogs" className="hover:text-pink-600 transition-colors">
                 Blog hướng dẫn
               </Link>
-              <Link href="/previews/type1" className="hover:text-pink-600 transition-colors">
-                Xem templates
+              <Link href="/previews" className="hover:text-pink-600 transition-colors">
+                Xem ví dụ
               </Link>
               <Link href="/" className="hover:text-pink-600 transition-colors">
                 Về chúng tôi

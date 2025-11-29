@@ -588,16 +588,16 @@ export default function VietLoiMoi() {
           </div>
         </div>
 
-        {/* Templates & Examples */}
+        {/* Ví Dụ & Mẫu */}
         <div className="bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl p-8 text-white text-center mb-8">
-          <h3 className="text-2xl font-bold mb-4">📝 Ready-to-Use Templates</h3>
+          <h3 className="text-2xl font-bold mb-4">📝 Ready-to-Use Ví Dụ</h3>
           <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            Download 15+ invitation templates với different styles and personalities để customize cho đám cưới của bạn
+            Download 15+ ví dụ mời cưới với different styles and personalities để customize cho đám cưới của bạn
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-sm">
             <div className="bg-white/20 p-4 rounded-lg">
               <div className="text-2xl font-bold">5</div>
-              <div>Formal templates</div>
+              <div>Formal ví dụ</div>
             </div>
             <div className="bg-white/20 p-4 rounded-lg">
               <div className="text-2xl font-bold">6</div>
@@ -697,7 +697,7 @@ export default function VietLoiMoi() {
               href="/previews/type1"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-full hover:from-amber-600 hover:to-orange-700 transition-all"
             >
-              Khám phá Templates
+              Khám phá Ví Dụ
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

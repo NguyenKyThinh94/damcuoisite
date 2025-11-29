@@ -65,18 +65,20 @@ export default function Home() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
-                onClick={() => document.getElementById('templates')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+              <Link 
+                href="/previews"
+                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center"
               >
                 Xem Demo Ngay
-              </button>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-full border-2 border-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              </Link>
+              <a 
+                href="https://zalo.me/0769779800"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-full border-2 border-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center"
               >
                 Liên Hệ Tư Vấn
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -87,11 +89,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              8+ Template Tuyệt Đẹp
+              8+ Ví Dụ Tuyệt Đẹp
             </h3>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Chọn template phù hợp với phong cách đám cưới của bạn. Mỗi template đều responsive và có thể tùy chỉnh hoàn toàn.
+              Chọn ví dụ phù hợp với phong cách đám cưới của bạn. Mỗi ví dụ đều responsive và có thể tùy chỉnh hoàn toàn.
             </p>
           </div>
           
@@ -175,10 +177,10 @@ export default function Home() {
           {/* View All Templates Button */}
           <div className="text-center mt-12">
             <Link
-              href="/previews/type5"
+              href="/previews"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-100 to-gray-200 hover:from-pink-500 hover:to-purple-600 text-gray-800 hover:text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              <span>Xem Thêm Templates</span>
+              <span>Xem Thêm Ví Dụ</span>
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -395,33 +397,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Sẵn Sàng Tạo Website Đám Cưới?
-          </h3>
-          <p className="text-xl text-gray-600 mb-10">
-            Liên hệ với chúng tôi ngay hôm nay để được tư vấn và báo giá miễn phí
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => document.getElementById('templates')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              Bắt Đầu Ngay
-            </button>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-800 font-semibold rounded-full border-2 border-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              Xem Báo Giá
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer id="contact" className="py-12 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -446,7 +421,9 @@ export default function Home() {
                 Facebook
               </a>
               <a 
-                href="tel:0769779800" 
+                href="https://zalo.me/0769779800"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
