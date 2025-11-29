@@ -181,30 +181,6 @@ export default function BlogsPage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="mt-16">
-        <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Đăng ký nhận thông tin mới</h3>
-          <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            Nhận những bài viết mới nhất về xu hướng đám cưới và mẹo thiết kế website 
-            đẹp ngay trong hộp thư của bạn
-          </p>
-          <div className="max-w-md mx-auto flex gap-3">
-            <input
-              type="email"
-              placeholder="Nhập email của bạn..."
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-white/50 focus:outline-none"
-            />
-            <button className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-colors">
-              Đăng ký
-            </button>
-          </div>
-          <p className="text-sm opacity-75 mt-3">
-            Chúng tôi cam kết không spam và bạn có thể hủy đăng ký bất cứ lúc nào.
-          </p>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="mt-12">
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-pink-200/50 text-center">
