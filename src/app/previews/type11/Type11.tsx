@@ -10,6 +10,7 @@ interface Type11ClientProps {
 
 export default function Type11({ data }: Type11ClientProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [activeTab, setActiveTab] = useState<'bride' | 'groom'>('bride');
 
   const {
     brideName = "THÚY LINH",
@@ -18,6 +19,8 @@ export default function Type11({ data }: Type11ClientProps) {
     location = "Hà Nội, Việt Nam",
     hashtag = "#ThuyLinhMinhDuc",
     heroImage = "/images/img15.jpg",
+    howWeMet = { date: "", story: "" },
+    proposal = { date: "", story: "" },
     aboutBride = { name: "", image: "", description: "", hobbies: [], favoriteThings: [] },
     aboutGroom = { name: "", image: "", description: "", hobbies: [], favoriteThings: [] },
     galleryImages = [],
@@ -46,61 +49,134 @@ export default function Type11({ data }: Type11ClientProps) {
         </div>
       </section>
 
-      {/* Quick Access Buttons */}
-      <section className="bg-white py-6 md:py-8 px-4">
-        <div className="max-w-2xl mx-auto grid grid-cols-2 gap-3 md:gap-4">
-          <a href={`#event`} className="text-center py-4 bg-gray-100 rounded hover:bg-gray-200 transition font-medium text-sm md:text-base">
-            📅 Sự Kiện
-          </a>
-          <a href={`#gallery`} className="text-center py-4 bg-gray-100 rounded hover:bg-gray-200 transition font-medium text-sm md:text-base">
-            📸 Hình Ảnh
-          </a>
-          {event.calendarUrl && (
-            <a href={event.calendarUrl} target="_blank" rel="noopener noreferrer" className="col-span-2 text-center py-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-medium text-sm md:text-base">
-              ➕ Thêm vào Lịch
-            </a>
-          )}
-        </div>
-      </section>
+      {/* About - Tabs */}
+      <section className="bg-gray-50 py-8 md:py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          {/* Tab Buttons */}
+          <div className="flex gap-0 mb-6 border-b border-gray-200">
+            <button
+              onClick={() => setActiveTab('bride')}
+              className={`flex-1 py-4 px-4 text-center font-medium transition-all ${
+                activeTab === 'bride'
+                  ? 'text-pink-600 border-b-2 border-pink-600'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              💍 {aboutBride.name || brideName}
+            </button>
+            <button
+              onClick={() => setActiveTab('groom')}
+              className={`flex-1 py-4 px-4 text-center font-medium transition-all ${
+                activeTab === 'groom'
+                  ? 'text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              🤍 {aboutGroom.name || groomName}
+            </button>
+          </div>
 
-      {/* About - Condensed */}
-      <section className="bg-gray-50 py-6 md:py-8 px-4">
-        <div className="max-w-2xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            {/* Bride */}
-            <div className="flex gap-4">
-              <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden shadow">
-                <Image
-                  src={aboutBride.image || "/images/img2.jpg"}
-                  alt={brideName}
-                  fill
-                  className="object-cover"
-                />
+          {/* Tab Content */}
+          <div className="bg-white rounded-lg p-6 md:p-8 shadow-sm">
+            {activeTab === 'bride' ? (
+              <div className="text-center">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={aboutBride.image || "/images/img2.jpg"}
+                    alt={brideName}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">{aboutBride.name || brideName}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">{aboutBride.description}</p>
+                {aboutBride.hobbies && aboutBride.hobbies.length > 0 && (
+                  <div className="mt-6">
+                    <p className="text-sm font-semibold text-gray-500 uppercase mb-3">Sở thích</p>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {aboutBride.hobbies.map((hobby, idx) => (
+                        <span key={idx} className="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">
+                          {hobby}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-              <div className="flex flex-col justify-center">
-                <h3 className="font-bold text-gray-900 text-sm md:text-base">{aboutBride.name || brideName}</h3>
-                <p className="text-xs text-gray-600 line-clamp-2">{aboutBride.description}</p>
+            ) : (
+              <div className="text-center">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={aboutGroom.image || "/images/img3.jpg"}
+                    alt={groomName}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">{aboutGroom.name || groomName}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">{aboutGroom.description}</p>
+                {aboutGroom.hobbies && aboutGroom.hobbies.length > 0 && (
+                  <div className="mt-6">
+                    <p className="text-sm font-semibold text-gray-500 uppercase mb-3">Sở thích</p>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {aboutGroom.hobbies.map((hobby, idx) => (
+                        <span key={idx} className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                          {hobby}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
-
-            {/* Groom */}
-            <div className="flex gap-4">
-              <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden shadow">
-                <Image
-                  src={aboutGroom.image || "/images/img3.jpg"}
-                  alt={groomName}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-col justify-center">
-                <h3 className="font-bold text-gray-900 text-sm md:text-base">{aboutGroom.name || groomName}</h3>
-                <p className="text-xs text-gray-600 line-clamp-2">{aboutGroom.description}</p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
+
+      {/* Love Stories */}
+      {(howWeMet?.story || proposal?.story) && (
+        <section className="py-8 md:py-12 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Câu Chuyện Tình Yêu</h2>
+            
+            <div className="space-y-8">
+              {/* How We Met */}
+              {howWeMet?.story && (
+                <div className="relative">
+                  <div className="flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-4 h-4 bg-pink-500 rounded-full"></div>
+                      <div className="w-1 h-20 bg-gray-200 my-2"></div>
+                    </div>
+                    <div className="pb-8">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Chúng Ta Gặp Nhau</h3>
+                      <p className="text-sm text-gray-500 mb-3">{howWeMet.date}</p>
+                      <p className="text-gray-700 leading-relaxed">{howWeMet.story}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Proposal */}
+              {proposal?.story && (
+                <div className="relative">
+                  <div className="flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
+                      <div className="w-1 h-20 bg-gray-200 my-2"></div>
+                    </div>
+                    <div className="pb-8">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Lời Cầu Hôn</h3>
+                      <p className="text-sm text-gray-500 mb-3">{proposal.date}</p>
+                      <p className="text-gray-700 leading-relaxed">{proposal.story}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Event Details */}
       <section id="event" className="py-6 md:py-8 px-4">

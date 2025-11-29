@@ -78,7 +78,7 @@ export default function Type9({ data }: Type9ClientProps) {
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {/* Bride */}
             <div className="text-center">
-              <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 md:h-96 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={aboutBride.image || "/images/img2.jpg"}
                   alt={aboutBride.name || brideName}
@@ -92,7 +92,7 @@ export default function Type9({ data }: Type9ClientProps) {
 
             {/* Groom */}
             <div className="text-center">
-              <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative w-full h-80 md:h-96 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={aboutGroom.image || "/images/img3.jpg"}
                   alt={aboutGroom.name || groomName}
@@ -208,13 +208,13 @@ export default function Type9({ data }: Type9ClientProps) {
                 </div>
               </div>
               {giftRegistry.bride.qrCode && (
-                <div className="mt-4 flex justify-center">
+                <div className="mt-6 flex justify-center">
                   <Image
                     src={giftRegistry.bride.qrCode}
                     alt="QR Code"
-                    width={120}
-                    height={120}
-                    className="w-24 h-24"
+                    width={160}
+                    height={160}
+                    className="w-40 h-40"
                   />
                 </div>
               )}
@@ -238,13 +238,13 @@ export default function Type9({ data }: Type9ClientProps) {
                 </div>
               </div>
               {giftRegistry.groom.qrCode && (
-                <div className="mt-4 flex justify-center">
+                <div className="mt-6 flex justify-center">
                   <Image
                     src={giftRegistry.groom.qrCode}
                     alt="QR Code"
-                    width={120}
-                    height={120}
-                    className="w-24 h-24"
+                    width={160}
+                    height={160}
+                    className="w-40 h-40"
                   />
                 </div>
               )}
